@@ -1,0 +1,52 @@
+version: '2'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    ports:
+        - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null --bind_ip_all # --quiet
+  mongo-seed:
+    build: ./mongo-seed
+    environment:
+      - WAIT_HOSTS=mongodb:27017
+    volumes:
+      - ./mongo-seed:/mongo-seed
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+  server:
+    build:
+      context: ./server/
+    # command: /usr/app/node_modules/.bin/nodemon ./index.js
+    environment:
+      - WAIT_HOSTS=mongodb:27017
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./server/:/usr/app
+      - /usr/app/node_modules
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    ports:
+      - "8081:3000"
+    # env_file: ./server/.env # TODO - uncomment this to auto-load your .env file!
+  client:
+    build:
+      context: ./client/
+    command: npm run start
+    volumes:
+      - ./client/:/usr/app
+      - /usr/app/node_modules
+    depends_on:
+      - server
+    ports:
+      - "8080:3000"
