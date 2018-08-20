@@ -22,7 +22,8 @@ export class PlacesListPage extends React.Component {
 PlacesListPage.propTypes = {
   actions: PropTypes.object.isRequired,
   places: PropTypes.array,
-  getPlacesList: PropTypes.func
+  getPlacesList: PropTypes.func,
+  match: PropTypes.object
 };
 
 const mapStateToProps = (state) => {

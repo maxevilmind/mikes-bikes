@@ -39,16 +39,4 @@ services:
     ports:
       - "8081:3000"
     # env_file: ./server/.env # TODO - uncomment this to auto-load your .env file!
-  client:
-    environment:
-      - NOVE_ENV=production
-    build:
-      context: ./client/
-    command: npm run build
-    volumes:
-      - ./client/:/usr/app
-      - /usr/app/node_modules
-    depends_on:
-      - server
-    ports:
-      - "8080:3000"
+

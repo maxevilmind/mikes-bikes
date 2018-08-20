@@ -3,6 +3,9 @@ let ObjectId = require('mongodb').ObjectId;
 let url = "mongodb://mongodb:27017/";
 let express = require('express')
 let app = express()
+let path = require('path');
+let apicache = require('apicache');
+let cache = apicache.middleware
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -11,10 +14,11 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use(express.static('build'))
+
 MongoClient.connect(url, (err, db) => {
   if (err) throw err;
   let dbo = db.db("test");
-
   app.get('/places', (req, res) => {
     const filters = req.query.filters && JSON.parse(req.query.filters);
     let query = {
@@ -75,7 +79,7 @@ MongoClient.connect(url, (err, db) => {
       res.send(result)
     });
   })
-  app.get('/payment_types', (req, res) => {
+  app.get('/payment_types', cache('24 hours'), (req, res) => {
     dbo
     .collection("delivery_sites")
     .aggregate(

@@ -1,13 +1,12 @@
 {
-  "name": "react-slingshot",
-  "version": "7.0.1",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "mikes-bikes",
+  "version": "0.1.0",
+  "description": "",
   "engines": {
     "npm": ">=3"
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
-    "setup": "node tools/setup/setupMessage.js && npm install && node tools/setup/setup.js",
     "remove-demo": "babel-node tools/removeDemo.js",
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm run start-message",
@@ -18,7 +17,7 @@
     "lint:watch": "npm run lint -- --watch",
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
-    "prebuild": "npm run lint && npm run test && npm run clean-dist",
+    "prebuild": "",
     "build": "babel-node tools/build.js && npm run open:dist",
     "test": "jest",
     "test:CI": "babel-node tools/testCi.js",
@@ -28,7 +27,7 @@
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "Cory House",
+  "author": "maxevilmind",
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "1.4.3",
@@ -100,24 +99,10 @@
     "webpack-hot-middleware": "2.22.3",
     "webpack-md5-hash": "0.0.6"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "react-router",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "redux",
-    "flux",
-    "boilerplate",
-    "starter"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/react-slingshot"
+    "url": ""
   },
   "jest": {
     "moduleNameMapper": {
