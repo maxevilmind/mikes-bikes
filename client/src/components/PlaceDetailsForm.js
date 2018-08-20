@@ -79,6 +79,19 @@ export class PlaceDetailsForm extends React.Component {
             )
           }
           <Typography variant="title" gutterBottom>
+            Categories
+          </Typography>
+          {
+            place && place.categories && place.categories.map(category =>
+              <Chip
+                key={category}
+                label={category}
+                className={classes.chip}
+                style={{margin: '10px'}}
+              />
+            )
+          }
+          <Typography variant="title" gutterBottom>
             Working Hours
           </Typography>
           <Typography gutterBottom noWrap>

@@ -44,7 +44,7 @@ services:
       - NOVE_ENV=production
     build:
       context: ./client/
-    command: npm run build
+    command: npm run start
     volumes:
       - ./client/:/usr/app
       - /usr/app/node_modules

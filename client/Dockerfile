@@ -9,10 +9,10 @@ COPY src ./src
 
 RUN npm install -qy
 
-RUN npm run build
+RUN npm run
 
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "run", "build"]
+CMD ["npm", "run"]
