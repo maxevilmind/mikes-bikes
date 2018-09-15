@@ -5,10 +5,10 @@ I am not totally proud of it because I have compromised between the clean code, 
 
 ## Screens
 
-![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.28.39%20PM.png)
-![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.30.09%20PM.png)
-![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.31.31%20PM.png)
-![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.32.01%20PM.png)
+![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.28.39%20PM.png | width=240)
+![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.30.09%20PM.png | width=240)
+![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.31.31%20PM.png | width=240)
+![alt text](https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/Screen%20Shot%202018-08-25%20at%2012.32.01%20PM.png | width=240)
 
 
 ## Getting Started
