@@ -5,7 +5,7 @@ I am not totally proud of it because I have compromised between the clean code, 
 
 ## Screens
 
-<img align="center" src="https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/placeit%20(1).png" width="100%"><img align="center" src="https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/placeit%20(2).png" width="50%"><img align="center" src="https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/placeit%20(3).png" width="50%">
+<img align="center" src="https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/placeit%20(1).png" width="100%"><img align="center" src="https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/placeit%20(2).png" width="50%"><img align="center" src="https://raw.githubusercontent.com/maxevilmind/mikes-bikes/master/screens/placeit.png" width="50%">
 
 
 ## Getting Started
